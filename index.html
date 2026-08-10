@@ -1,14 +1,122 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <meta name="description" content="Особисте портфоліо та ігровий проєкт">
+    <title>Моє портфоліо</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Добро пожаловать!</h1>
-    <p>Это мой первый сайт.</p>
+<header class="navbar">
+    <a class="logo" href="#home">Моє портфоліо</a>
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#game">Моя гра</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">ПОРТФОЛІО • PYTHON • GAMEDEV</p>
+            <h1>Привіт! 👋<br>Я — <span>розробник-початківець.</span></h1>
+            <p class="lead">
+                Вивчаю програмування, створюю власні проєкти та експериментую
+                з Python, Pygame і веброзробкою.
+            </p>
+            <a class="button" href="#game">Переглянути мою гру →</a>
+        </div>
+        <div class="hero-card">
+            <div class="code-window">
+                <div class="dots"><i></i><i></i><i></i></div>
+                <pre><code>def create_game():
+    print("Привіт, світ!")
+    return "🎮"
+
+game = create_game()</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="eyebrow">ПРО МЕНЕ</p>
+        <h2>Що я роблю</h2>
+
+        <div class="cards">
+            <article class="card">
+                <div class="icon">🐍</div>
+                <h3>Python</h3>
+                <p>Вивчаю Python та використовую його для власних програм і експериментів.</p>
+            </article>
+
+            <article class="card">
+                <div class="icon">🎮</div>
+                <h3>GameDev</h3>
+                <p>Створюю ігри та механіки за допомогою Pygame.</p>
+            </article>
+
+            <article class="card">
+                <div class="icon">🌐</div>
+                <h3>Веброзробка</h3>
+                <p>Вивчаю HTML і CSS та вчуся створювати сайти, які працюють в інтернеті.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section about">
+        <div>
+            <p class="eyebrow">КОРОТКО ПРО МЕНЕ</p>
+            <h2>Розвиваюся через власні проєкти</h2>
+        </div>
+        <p>
+            Мені цікаво не просто вивчати теорію, а одразу перевіряти знання
+            на практиці. Тому я створюю маленькі програми, ігри та вебпроєкти,
+            поступово роблячи їх складнішими.
+        </p>
+    </section>
+
+    <section id="game" class="section game-section">
+        <p class="eyebrow">МІЙ ПРОЄКТ</p>
+        <h2>🎮 Моя гра на Pygame</h2>
+
+        <div class="game-layout">
+            <div class="game-preview">
+                <div class="game-screen">
+                    <div class="game-title">MY GAME</div>
+                    <div class="player">▲</div>
+                    <div class="ground"></div>
+                    <div class="game-hint">Скриншот гри можна додати сюди</div>
+                </div>
+            </div>
+
+            <div class="game-info">
+                <span class="tag">PYGAME</span>
+                <h3>Моя власна гра</h3>
+                <p>
+                    Тут буде опис твоєї гри: жанр, головна механіка, мета гравця
+                    та цікаві особливості проєкту.
+                </p>
+
+                <ul>
+                    <li>✓ Створена на Python</li>
+                    <li>✓ Використовує Pygame</li>
+                    <li>✓ Розроблена мною</li>
+                </ul>
+
+                <div class="buttons">
+                    <a class="button" href="#" onclick="alert('Вебверсію гри додамо наступним кроком!'); return false;">Грати в браузері</a>
+                    <a class="button secondary" href="#" onclick="alert('Посилання на завантаження додамо пізніше.'); return false;">Завантажити</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Моє портфоліо • Створено власноруч</p>
+</footer>
 
 </body>
 </html>
